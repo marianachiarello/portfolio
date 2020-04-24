@@ -1,0 +1,104 @@
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ // Add smooth scrolling to all links
+ $("a").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+   if (this.hash !== "") {
+     // Prevent default anchor click behavior
+     event.preventDefault();
+
+     // Store hash
+     var hash = this.hash;
+
+     // Using jQuery's animate() method to add smooth page scroll
+     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+     $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 800, function(){
+ 
+       // Add hash (#) to URL when done scrolling (default click behavior)
+       window.location.hash = hash;
+     });
+   } // End if
+ });
+});
+</script>
+
+<html lang="en">
+
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<head>
+  <meta charset="utf-8">
+ <meta id="viewport" name="viewport" content ="width=device-width" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+
+  <title>Mariana Chiarello</title>
+  <meta name="description" content="Portfólio">
+  <meta name="Mariana Chiarello" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+  <div class="menu-mobile">
+  	<h1><a href="index.html">Mariana Chiarello</a></h1>
+  </div>
+  <div class="esquerda">
+	<h1><a href="index.html">Mariana Chiarello</a></h1>
+	<br>
+	<p><strong>ARQ. projetos acadêmicos</strong><p>
+	<ul>
+  		<li><a href="projeto-parqueaquatico.html">parque aquático cruz vermelha</a></li>
+  		<li><a href="projeto-intermodaldeodoro.html">intermodal deodoro</a></li>
+ 		<li><a href="projeto-gustavo.html">espetáculo da praça</a></li>
+	</ul>
+	<br>
+	<p><strong>cenografia</strong><p>
+	<ul>
+  		<li><a href="projeto-dipua.html">dipuá: estúdio de escultura</a></li>
+ 		<li><a href="projeto-isla.html">isla: festa do mar</a></li>
+  		<li><a href="projeto-modelos.html">somos todas modelos</a></li>
+	</ul>
+	<li><a href="#fale-comigoid"><strong>fale comigo :)</strong></a><li>
+</div>
+<div class="direita-inteira">
+	<div class="direita">
+		<a href="projeto-gustavo.html" class="card-projeto">
+			<img src="images/01.png" style="margin-bottom: 30px;">
+		</a>
+		<a href="projeto-dipua.html" class="card-projeto">
+			<img src="images/02.png" style="margin-bottom: 30px;">
+		</a>
+		<a href="projeto-isla.html" class="card-projeto">
+			<img src="images/04.png">
+		</a>
+		<a href="projeto-intermodaldeodoro.html" class="card-projeto">
+			<img src="images/07.png">
+		</a>
+		<a href="projeto-parqueaquatico.html" class="card-projeto">
+			<img src="images/05.png">
+		</a>
+		<a href="projeto-modelos.html" class="card-projeto">
+			<img src="images/06.png">
+		</a>
+	</div>
+	<div class="fale-comigo" id="fale-comigoid">
+		<img src="images/eu.png" style="margin-right: 30px;" class="img-fale-comigo">
+		<div class="texto-sobre">
+			<h1>fale comigo :)</h1>
+			<p class="desc-sobre"> olá, muito prazer! <br><br>
+				sou a mariana, estudante de arquitetura e urbanismo da universidade santa úrsula. trabalhei com cenografia e visual merchandising durante quatro anos no estúdio nua e antes disso, me formei em jornalismo pela UFRJ. <br><br>hoje estou buscando experiências profissionais mais próximas de projetos de arquitetura e urbanismo, mas sem abandonar a cenografia! <br><br>
+				caso queira falar comigo, por favor envie um email para:
+ </p>
+			<h2 class="email">chiarellomarianaa@gmail.com</h2>
+		</div>
+	</div>
+</div>
+</body>
+</html>

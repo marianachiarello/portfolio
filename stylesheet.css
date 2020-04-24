@@ -1,0 +1,195 @@
+<style>
+ ::selection {
+  background:#D3FFDD;
+}
+body{
+	font-family: 'Raleway';
+	color: #313131;
+	margin: auto;
+	max-width: 1200px;
+	display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+}
+h1{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 33px;
+}
+h2{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+}
+p{
+	line-height: 180%;
+}
+.direita-inteira{
+	max-width: 890px;
+	margin-left: 311px;
+	margin-top: 90px;
+}
+.esquerda{
+	max-width: 281px;
+	position: fixed;
+}
+li{
+	line-height: 200%;
+	display: block;
+}
+ul{
+	padding-left: 0px;
+}
+.direita{
+	display: flex;
+    flex-wrap: wrap;
+}
+.texto-escondido{
+	visibility: hidden;
+	opacity: 0;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+    vertical-align: middle;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.card-projeto:hover .texto-escondido {
+  visibility: visible;
+  opacity: 1;
+}
+.card-projeto{
+	margin-right: 15px;
+	margin-bottom: 30px;
+	width:277px;
+	height:252px;
+	display: table;
+}
+.card-01{
+	background-image: url(images/01.png);
+}
+.card-02{
+	background-image: url(images/02.png);
+}
+.card-03{
+	background-image: url(images/03.png);
+}
+.card-04{
+	background-image: url(images/04.png);
+}
+.card-05{
+	background-image: url(images/05.png);
+}
+.card-06{
+	background-image: url(images/06.png);
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.fale-comigo{
+	display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+li:hover {
+  text-decoration: underline;
+}
+img:hover{
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+.img-projeto{
+	margin-right: 15px;
+}
+.img-deodoro{
+	max-width: 800px;
+}
+.direita-fotos{
+	display: flex;
+}
+.menu-mobile{
+	text-align: center;
+   	margin-top: 30px;
+   	display: none;
+}
+.img-fale-comigo{
+		margin-right:30px;
+	}
+
+@media (max-width: 1200px) {
+	body{
+		display: block;
+	}
+	.esquerda{
+		display: none;
+	}
+	.direita-inteira{
+		max-width: inherit;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.img-projeto-maior{
+		width: 90%;
+	}
+	.img-fale-comigo{
+		width: 60%;
+		margin-right:0px;
+	}
+	.fale-comigo{
+		width: 60%;
+		margin: auto;
+		margin-top: 100px;
+		display: block;
+		margin-bottom: 60px;
+	}
+	.menu-mobile{
+    	display: block;
+	}
+	.direita-inteira {
+		margin-top: 30px;
+	}
+	.direita-fotos{
+		display: block;
+	}
+	.img-projeto {
+    margin-right: 0;
+}
+@media (max-width: 445px) {
+	body{
+		max-width: 90%;
+	}
+	.img-projeto{
+	width: 90%;
+	height: 90%;
+	}
+	.fale-comigo{
+		width: 90%;
+		display: block;
+	}
+	.texto-sobre{
+	    width: 100%;
+	}
+	.email{
+		font-size: 16px;
+		font-weight: 800;
+	}
+	.card-projeto{
+		margin-right: 0;
+	}
+		.menu-mobile{
+		text-align: center;
+    	margin-top: 30px;
+	}
+	.img-fale-comigo{
+		width: 90%
+	}
+}
+
+</style>
